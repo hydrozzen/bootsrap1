@@ -1,0 +1,11 @@
+@media only screen and (max-width: 600px) {
+    body {
+      background-color: rgb(232, 232, 232);
+    }
+    .overlay{
+      font-size: 12px;
+    }
+    .text-center {
+      font-size: 11px;
+    }
+  }

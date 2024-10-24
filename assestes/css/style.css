@@ -8,7 +8,7 @@
     --bg-black:#2c2c2c;
     --bg-light-pink:#ff007a;
     --bg-light-grey:#f6f9fe;
-    --bg-gradient:linear-gradient(to top,#ff007a 0%,rgba 142,0,116,1 100%);
+    --bg-gradient: linear-gradient(to top, #ff007a 0%, rgba(142, 0, 116, 1) 100%);
     --bg-card-shadow:0 0.188rem 1.25rem 0px rgba(0,0,0,0.06);
     --bg-card-shadow:0 2rem 5rem rgb(0,0,0,0.06);
     --bg-light-grey-1:#eee;
@@ -27,7 +27,7 @@ body{
     line-height: 1.75rem;
     background: var(--bg-white);
     color: var(--text-black);
-    overflow-x:hidden;
+ 
 
 }
 h1{
@@ -38,7 +38,7 @@ h1{
 
 }
 h2{
-    color: var(--text-white);
+    color: var(--text-black);
     font-size: 2.875rem;
     line-height: 3.375rem;
     font-weight: 400;
@@ -107,8 +107,11 @@ img{
     max-width: 100%;
 
 }
+.home-page >img{
+    width: 210%;
+}
 .btn{
-    font-size: 0.0938rem;
+    font-size: 0.938rem;
     font-weight: 500;
     color: var(--text-white);
     line-height: 1;
@@ -119,15 +122,25 @@ img{
     outline: 0 none;
     position: relative;
     z-index: 1;
+    margin: 1%;
 }
 .btn,.btn:active,.btn.sApp-btn:before,
 .bg-overlay::after{
-    background-color: var(--bg-gradient);
+    background: var(--bg-gradient);
 
 }
 .btn:hover{
-    color: var(--text-white);
-    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+   
+    --bg-gradient: linear-gradient(to bottom, #ff007a 0%, rgba(142, 0, 116, 1) 100%);
+    color: white!important;
+    transform:all .3s ease-out;
+    -webkit-transform:all .3s ease-out;
+    -moz-transform:all .3s ease-out;
+    -ms-transform:all .3s ease-out;
+    -o-transform:all .3s ease-out;
+    transform:all .3s ease-out;
+
+ 
 }
 .ptb_100{
     padding: 100px 0;
@@ -154,9 +167,6 @@ img{
     text-transform: capitalize;
     transition: .3s;
 
-}
-.navbar-brand img{
-    max-width: 6%;
 }
 
 .navbar-sticky-on .navbar-nav .nav-link:hover,
@@ -197,6 +207,32 @@ img{
     box-shadow:rgba(0,0,0,0.01) 0px 0px 20px;
 
 }
+
+#home{
+    background: url("https://img.freepik.com/free-photo/abstract-luxury-gradient-blue-background-smooth-dark-blue-with-black-vignette-studio-banner_1258-104002.jpg?t=st=1729752217~exp=1729755817~hmac=856d30936baeff3b6ff2ccf8c7f4f5ac7c1a49f3d2ceb0d0aee0d1ba1b0e30ea&w=1060");
+   
+   
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+  
+}
+#home .home_text h2{
+    font-size: 3.33rem;
+    font-weight: 700;
+    line-height: 4.938rem;
+    color: var(--text-white);
+    padding: 2px 1px;
+}
+#home .home_text p{
+    font-size: 1.33rem;
+   
+    
+    color: var(--text-white);
+    padding: 0.2px 0.1px;
+}
+
 
 
 

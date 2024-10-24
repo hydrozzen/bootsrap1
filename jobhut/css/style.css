@@ -1,0 +1,101 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    
+}
+.navbar{
+    background-color:  #AC0C30;
+}
+.navbar-expand-lg .navbar-nav .nav-link{
+    color: white!important;
+}
+.logoimg {
+    width: 121px;
+    /* border-top: 21px solid rgb(255, 255, 255);
+    border-bottom: 21px solid rgb(255, 255, 255); */
+  
+}
+.navbar-toggler {
+    border-color: transparent!important; /* Optional: remove the border if desired */
+}
+
+.navbar-toggler-icon {
+    background-image: url('bars.svg')!important; /* Ensure the path to your image is correct */
+}
+
+ /* Video content */
+  
+ .video-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.video-container video {
+    width: 100%;
+    height: auto;
+}
+
+.overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: Roboto;
+    font-size: 41px;
+  
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: 700;
+    color: white;
+   
+}
+.text-center {
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    font-weight: 600;
+}
+.pcoro{
+    text-align: center;
+    font-family: Roboto;
+    font-size: 25px;
+    font-weight: 700;
+    line-height: normal;
+    text-align: center;
+    color: rgb(51, 51, 51);
+    margin-bottom: 20px;
+   margin-top: 1rem;
+    min-height: 50px;
+    overflow: hidden;
+}
+.image-container {
+    display: inline-block;
+    text-align: center; /* Center align text below the image */
+    overflow: hidden; /* Ensures that the scaling effect doesn't overflow */
+    transition: transform 0.3s ease; /* Smooth transform effect for the container */
+}
+
+.image-container img {
+    transition: transform 0.3s ease; /* Smooth scaling effect for the image */
+    width: 100%; /* Make the image responsive */
+    max-width: 400px; /* Set max width */
+}
+
+
+.image-container:hover img {
+    transform: scale(1.018); /* Scale image on hover */
+    border-radius: 3%;
+}
+
+.caption {
+    color: black; /* Initial text color */
+    transition: color 0.3s ease; /* Smooth color transition */
+    margin-top: 10px; /* Space between image and caption */
+}
+
+.image-container:hover .caption {
+    color: #008081; /* Change text color on hover */
+    margin-top: 17px;
+}
+.slick-dots li button{
+
+}
